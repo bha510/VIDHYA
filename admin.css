@@ -1,0 +1,165 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #002b36; /* Dark Background */
+    color: #ffffff; /* White Text */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008b8b; /* Dark Cyan */
+    padding: 15px 20px;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Highlight Color */
+}
+
+/* Dashboard Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #005f5f; /* Darker Cyan */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dashboard Title */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    flex: 1;
+    padding: 15px;
+    background-color: #008b8b;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.stat-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Form for Adding Books */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #007575;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004d4d;
+    color: white;
+}
+
+input::placeholder {
+    color: #b0e0e6;
+}
+
+button {
+    padding: 12px;
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+/* Books Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #005757;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #008b8b;
+    text-align: center;
+}
+
+th {
+    background-color: #008b8b;
+    font-size: 18px;
+}
+
+/* Delete Button */
+button.delete {
+    background-color: #ff3333;
+    color: white;
+}
+
+button.delete:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+    }
+}

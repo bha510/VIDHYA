@@ -1,0 +1,268 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Styling */
+body {
+    background: url('https://booksalmirah.com/wp-content/uploads/2023/08/alfons-morales-YLSwjSy7stw-unsplash-1.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Orders Section */
+.container {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 80px;
+    overflow-x: auto;
+}
+
+/* Table Styling */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.orders-table th, .orders-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.orders-table th {
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+.orders-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.orders-table tr:hover {
+    background: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Footer */
+/* Ensure full-page layout */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Content should push the footer down */
+.main-content {
+    flex: 1;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+    width: 100%;
+    position: relative; /* Change to absolute if needed */
+    bottom: 0;
+   position: absolute;
+        bottom: 0;
+        left: 0;
+   
+    
+}
+
+/* Contact Section */
+.contact-container {
+    max-width: 600px;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Form Inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input, 
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Send Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+}
+
+/* Contact Form Styling */
+#contact-form {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Input Fields */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+    color: #888;
+    font-size: 14px;
+}
+
+/* Textarea (Message Box) */
+#contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+#contact-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#contact-form button:hover {
+    background: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #contact-form {
+        width: 90%;
+    }
+}
+

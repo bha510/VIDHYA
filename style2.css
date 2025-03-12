@@ -1,0 +1,123 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://booksalmirah.com/wp-content/uploads/2023/08/alfons-morales-YLSwjSy7stw-unsplash-1.jpg') no-repeat center center/cover; /* Background Image */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Profile Section */
+.profile-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slight Transparency */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.profile-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Profile Picture */
+#profilePic {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 3px solid #007BFF;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* User Info */
+h3 {
+    color: #222;
+}
+
+p {
+    color: #555;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#googleLogin {
+    background-color: #007BFF;
+    color: white;
+}
+
+#googleLogin:hover {
+    background-color: #0056b3;
+}
+
+#logout {
+    background-color: #ff4d4d;
+    color: white;
+    display: none;
+}
+
+#logout:hover {
+    background-color: #cc0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

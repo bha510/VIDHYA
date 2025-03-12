@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | VIDHYA</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Admin Panel 📊</div>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#" id="logout"><i class="fa-solid fa-sign-out"></i> Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Admin Dashboard</h2>
+
+        <div class="stats">
+            <h3>Users List</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Last Login</th>
+        </tr>
+    </thead>
+    <tbody id="users-list"></tbody>
+</table>
+
+<!-- User Details Modal -->
+<div id="user-modal" class="modal" style="display: none;">
+</div>
+
+            <div class="stat-box">
+                <h3>Total Downloads</h3>
+                <p id="total-downloads">0</p>
+            </div>
+            <div class="stat-box">
+                <h3>Total Website Visits</h3>
+                <p id="total-visits">0</p>
+            </div>
+        </div>
+
+        <h3>Manage Books</h3>
+        <form id="add-book-form">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="book-author" placeholder="Author Name" required>
+            <input type="text" id="book-pdf" placeholder="PDF URL" required>
+            <input type="text" id="book-thumbnail" placeholder="Thumbnail Image URL" required> <!-- New Field -->
+            <button type="submit">Add Book</button>
+        </form>
+        <h3>Books List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>PDF</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="books-list"></tbody>
+        </table>
+        
+
+        <h3>User Orders</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Book Name</th>
+                    <th>Download Date</th>
+                </tr>
+            </thead>
+            <tbody id="orders-list"></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
